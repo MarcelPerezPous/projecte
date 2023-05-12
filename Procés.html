@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Procés</title>
+    <link rel="stylesheet" href="cssplanaweb.css" type="text/css">
+    <nav><ul>
+        <div class="menu"></div>
+        <li><a class="text1" a href="Eines emprades.html">Eines emprades</a></li>
+        <li><a class="text2" a href="Procés.html">Procés</a></li>
+        <li><a class="text3" a href="Plana web.html">Inici</a></li>
+      </ul></nav>
+</head>
+<body>
+    <h1 class="titulo">Procés</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Servidor RTMP</h2>
+	  <h3>Creació</h3>
+    <p>Per fer el meu servidor RTMP vaig optar per instal·lar un ubuntu server i en ell instal·lar-li Nginx i a l'arxiu "/etc/nginx/nginx.conf" aplicar-li una configuració que escolti el port 1935:
+    </p>
+    <img src="imatge1.png" style="margin-left: 40px;">
+    <p>També vaig fer un port-forwarding al meu router que fes que jo sense necessitat d'estar a la mateixa xarxa envies senyal al port 1935 i ell el transformes:
+    </p>
+      <img src="imatge2.PNG" style="margin-left: 40px;">
+      <p>Vaig instal·lar un servei No-IP que em permetres tenir un subdomini allotjat i a la configuració del Larix Broadcaster no posar la meva IP pública ja que al tenir una IP dinàmica no em canvies i no reves senyal:
+      </p>
+      <img src="imatge3.jpg" style="margin-left: 40px;">
+      <p>Per iniciar el servei ho faig a través de les següents comandes "/usr/local/bin/noip2" i "Noip2 -S" m'ensenya els serveis No-IP que estan actius:
+      </p>
+      <img src="imatge4.PNG" style="margin-left: 40px;">
+      <p>Per últim vaig aprendre com funcionava OBS per poder retransmetre la cursa dels 10km de La Salle a Youtube, vaig crear dos tipus d'escenes, la primera es l'imatge de la camera i els logos de La Salle i Esports Parra i la segona pasa els patrocinadors de la cursa, aquesta la feiem passar en el temps de descans entre cursa i cursa:
+      </p>
+    
+      <img src="imatge6.PNG" style="margin-left: 40px;">
+      <img src="imatge5.PNG" style="margin-left: 40px;">
+</body>
+</html>
